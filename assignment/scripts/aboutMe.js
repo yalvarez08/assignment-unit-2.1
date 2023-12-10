@@ -117,7 +117,7 @@ console.log( petStatus );
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-let luckyResult = 2;
+let luckyResult = 3;
 switch ( luckyResult ){
   case 1:
     luckyResult = 'First is the worst';
