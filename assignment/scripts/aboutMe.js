@@ -56,13 +56,14 @@ console.log( allowedPets );
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = 'Adventures are great!' ;
-if ( adventurous ) {
-  console.log( result );
+let result = 'Adventures are great!';
+if ( adventurous ){ 
+  result;
 }
 else{
-  console.log( 'How about we stay home?' );
+  result = 'How about we stay home?';
 }
+console.log ( result );
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
@@ -71,11 +72,12 @@ else{
 //      Console log the value of `diceRoll`
 let diceRoll = 'Try again later.';
 if ( luckyNumber == 2 && adventurous ) {
-  console.log( 'Roll the dice!' );
+  diceRoll = 'Roll the dice!';
 }
 else{
-  console.log( diceRoll );
+  diceRoll;
 }
+console.log( diceRoll );
 
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -85,9 +87,9 @@ else{
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = 'current'
+let petStatus = 'I can have more pets.';
 if ( pets < allowedPets ) {
-  petStatus = 'I can have more pets.';
+  petStatus;
   if ( pets === allowedPets ){
     petStatus = "I have enough pets.";
   }
@@ -95,6 +97,7 @@ if ( pets < allowedPets ) {
   else{
     petStatus = 'Oh no, I have too many pets!';
   }
+
 console.log( petStatus );
 
 
@@ -116,7 +119,8 @@ console.log( petStatus );
 //      console.log `luckyResult` after the conditional has run.
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
-
+let message = result = adventurous ? 'Adventures are great!' : 'How about we stay home?';
+console.log ( message );
 
 
 
